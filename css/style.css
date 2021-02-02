@@ -1,0 +1,108 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.chairs{
+    max-width: 1170px;
+    margin: 0 auto;    
+}
+
+.chairs__items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chairs__item{
+    max-width: 250px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.chairs__item-title{
+    line-height: 20px;
+    font-size: 16px;
+    max-width: 235px;
+    min-height: 38px;
+    text-align: center;
+}
+
+.btn-modal{
+    border: none;
+    background-color: #e4568c;
+    padding: 8px 25px;
+    border-radius: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+.chairs__item-price{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+
+ /* modal window */
+
+
+ .modal{
+     display: block;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);   
+     background-color: rgba(228, 86, 140, 0.253);
+     width: 100%;  
+     height: 100vh;
+     display: none;
+     justify-content: center;
+ }
+
+ form{
+     display: flex;
+     flex-direction: column;
+     padding: 50px;    
+     position: relative; 
+}
+
+input{
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+}
+
+ input+input{
+     margin-top: 15px ;
+ }
+
+ .modal__close{
+     position: absolute;
+     top: 25px;
+     right: 25px;
+ }
+
+
+ .hide{
+     display: none;
+ }
+
+ .show{
+     display: flex;
+ }
+
+ .status{
+     margin-top: 30px;
+     font-size: 24px;
+     font-weight: 700;
+     color: #000;
+     text-align: center;
+     
+ }
